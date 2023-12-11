@@ -6,34 +6,57 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=MuseoModerno:wght@600&display=swap"
+        rel="stylesheet">
     <title>rscsite home</title>
+    <style>
+        h4 {
+            font-family: 'Inter', regular;
+            font-size: 26px;
+            /* Sets the font size to 26px */
+            font-weight: 400;
+            /* Sets the font weight to 400 */
+            line-height: 1.1;
+            /* Sets the line-height to 1.1 * the font-size */
+            color: #1b0d2d;
+        }
+    </style>
+    <style>
+        h5 {
+            font-family: 'Inter', regular;
+            font-size: 24px;
+            /* Sets the font size to 24px */
+            font-weight: 400;
+            /* Sets the font weight to 400 */
+            line-height: 1.1;
+            /* Sets the line-height to 1.1 * the font-size */
+            color: #1b0d2d;
+        }
+    </style>
 </head>
 
 <body><!-- site homepage-->
-    <header>
+
+    <header id="Top">
         <div>
             <img src="img/rsc/rsconant-logo-1200.png" alt="RSClogo">
             <nav>
-                <ul>
+                <ul id="menu1">
                     <li><a href='index.html'>Work</a></li>
                     <li><a href='about.html'>About</a></li>
-                    <li><a href='contact'>Contact</a></li>
+                    <li><a href='#contact'>Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section><!-- intro section block-->
+        <section id="Hero"><!-- intro section block-->
             <div><!-- container for both salutation and about-->
                 <h1>Hello, my name is <span>Rik Conant</span></h1>
-                <h2>I am a UI/UX designer from Moline, IL</h2><!--about header-->
+                <h3>I am a UI/UX designer from Moline, IL</h3><!--about header-->
                 <p>I have years of experience in various creative
                     forms, including concrete art, graphic design,
                     content writing, and game design. After
@@ -42,7 +65,7 @@
                     solutions for your UI/UX needs.</p>
             </div>
         </section>
-        <section><!-- work preview section block-->
+        <section id="Projects"><!-- work preview section block-->
             <div><!-- work preview container all projects-->
                 <h1> My Work </h1>
                 <div><!-- project1 row-->
@@ -53,12 +76,12 @@
                         </picture>
                     </div><!-- END column 1-->
                     <div><!-- project 1 info container (column 2)-->
-                        <h3> Go Do You </h3>
-                        <h4> location-based responsive app </h4>
+                        <h4>Go Do You</h4>
+                        <h5>location-based responsive app</h5>
                         <p>Features: Competetor Analysis, User Testing,
-                            Personas, User Flows, Style Guide, and
-                            Responsive Design for four screen sizes</p> 
-                        <a href="gdy-project.html" class="primary-button">View</a>
+                        Personas, User Flows, Style Guide, and
+                        Responsive Design for four screen sizes</p>
+                        <a href="gdy-project.html" class="button">View</a>
                     </div><!-- END column 2-->
                 </div><!-- END project1 row-->
                 <div><!-- project2 row-->
@@ -69,18 +92,18 @@
                         </picture>
                     </div><!-- END column 1-->
                     <div><!-- project 2 info container (column 2)-->
-                        <h3> No Knothing </h3>
-                        <h4> mobile quiz game app </h4>
+                        <h4>No Knothing</h4>
+                        <h5>mobile quiz game app</h5>
                         <p>Features: Competetor Analysis, User Testing,
                             User Flows, Style Guide, and native versions for both
                             Android and iPhone</p>
-                        <a href="#" class="primary-button">View</a>
+                        <a href="#" class="button">View</a>
                     </div><!-- END column 2-->
                 </div><!-- END project 2 row-->
             </div><!-- END work previw container-->
         </section>
     </main>
-    <footer><!-- entire footer section block-->
+    <footer id="contact"><!-- entire footer section block-->
         <div><!-- container for 3 footer rows-->
             <div><!-- social row-->
                 <div><!-- contact text-->
@@ -89,11 +112,12 @@
                     <h1>Find Me</h1>
                 </div><!-- END  contact text-->
                 <div><!-- contact links-->
-                    <a href="mailto:rscuiux@gmail.com">Send Email target="_blank">
-                        <img src="" alt="My Email">
+                    <a href="mailto:rscuiux@gmail.com" class="secondary-button">Send Email target="_blank">
+                        <img src="img/rsc/icon-email.svg" alt="My Email">
                     </a>
                     <a href="https://www.linkedin.com/in/rik-conant-15859bb3/" target="_blank">
-                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="1200" height="1200" viewBox="0 0 35 35" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <rect x="3.84095" y="3.2124" width="29.4694" height="28.9084" fill="#FFFCFC" />
                             <path
                                 d="M29.4761 29.5573H24.3503V21.5078C24.3503 19.5884 24.3161 17.1174 21.6844 17.1174C19.0147 17.1174 18.6062 19.2088 18.6062 21.3681V29.5567H13.4804V13.0038H18.4012V15.266H18.47C18.9625 14.4216 19.6741 13.7271 20.5291 13.2562C21.3841 12.7853 22.3504 12.5558 23.3252 12.5921C28.5204 12.5921 29.4783 16.0188 29.4783 20.4766L29.4761 29.5573ZM7.69674 10.7412C7.10842 10.7413 6.53329 10.5664 6.04406 10.2388C5.55484 9.91112 5.1735 9.44533 4.94826 8.90034C4.72302 8.35535 4.66401 7.75562 4.77868 7.17699C4.89335 6.59836 5.17656 6.06683 5.59248 5.6496C6.00841 5.23238 6.53838 4.9482 7.11537 4.833C7.69236 4.71781 8.29046 4.77677 8.83403 5.00243C9.37761 5.22809 9.84224 5.61032 10.1692 6.10078C10.4961 6.59124 10.6707 7.1679 10.6708 7.75784C10.6709 8.14955 10.594 8.53744 10.4446 8.89935C10.2951 9.26127 10.0761 9.59013 9.79993 9.86716C9.52376 10.1442 9.19589 10.364 8.83502 10.5139C8.47416 10.6639 8.08737 10.7411 7.69674 10.7412ZM10.2596 29.5573H5.12849V13.0038H10.2596V29.5573ZM32.0316 0.00236254H2.55277C1.88368 -0.00520895 1.23897 0.253897 0.760298 0.722745C0.281629 1.19159 0.00816582 1.83182 0 2.50275V32.1856C0.00788634 32.8569 0.281174 33.4975 0.759827 33.9669C1.23848 34.4362 1.88335 34.6958 2.55277 34.6887H32.0316C32.7023 34.6971 33.349 34.4382 33.8295 33.9689C34.3101 33.4996 34.5852 32.8582 34.5945 32.1856V2.50061C34.5849 1.82835 34.3096 1.18739 33.8291 0.718557C33.3485 0.249721 32.702 -0.00864538 32.0316 0.000220884"

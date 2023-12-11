@@ -1,6 +1,6 @@
 body{
     background-color: #ffffff;
-    font-family: 'MuseoModerno', semi-bold;
+    font-family: 'Inter', regular;
     font-size: 28px; /* Sets the font size to 28px */
     font-weight: 600; /* Sets the font weight to 600 */
     line-height: 1.1
@@ -8,84 +8,75 @@ body{
     color: #1b0d2d;
   }
   
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
   h1 {
-    font-size: .75em;
-    font-weight: 700;
+    font-family: 'MuseoModerno', semi-bold;
+    font-size: 44px; 
+    font-weight: 600;
   }
   
   h2 {
-    font-size: 2.25em;
-    font-weight: 700;
+    font-family: 'MuseoModerno', semi-bold;
+    font-size: 28px; 
+    font-weight: 600;
   }
   
   h3 {
-    font-size: 1.75em;
+    font-size: 36px;
     font-weight: 400;
   }
   h4 {
-    font-size: 1.35em;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  h6 {
+    font-family: 'MuseoModerno', medium;
+    font-size: 44px; 
     font-weight: 400;
   }
 p {
-    font-family: 'Inter', regular;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 400; /* Sets the font weight to 600 */
+    font-size: 19px; /* Sets the font size to 19px */
+    font-weight: 400; /* Sets the font weight to 400 */
     line-height: 1.1
     ; /* Sets the line-height to 1.1 * the font-size */
-    color: #1b0d2d;
+}
+#menu1 > li{
+    font-size: 16px; /* Sets the font size to 19px */
+    font-weight: 400; /* Sets the font weight to 400 */
+    line-height: 1.1
+    ; /* Sets the line-height to 1.1 * the font-size */  
+}
+#menu2 > li{
+  font-size: 20px; /* Sets the font size to 19px */
+  font-weight: 400; /* Sets the font weight to 400 */
+  line-height: 1.1
+  ; /* Sets the line-height to 1.1 * the font-size */  
 }
 img {
     width: 100%;
-  }
-  .primary-button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #1b0d2d;
-    color: #ffffff; /* needed to override the default link color */
-    font-family: 'Inter', regular;
-    text-align: center;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 3px solid #ffffff; /* width of the border, type, color */
-    transition: 0.2s opacity;
-  }
-  .primary-button:hover {
-    opacity: 0.6; /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
-  }
+}
 
-  /* Container needed to position the button. Adjust the width as needed */
-.container {
-    position: relative;
-    width: 100%;
-  }
-  
-  /* Make the image responsive */
-  .container img {
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Style the button and place it in the middle of the container/image */
-  .container .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .container .btn:hover {
-    background-color: black;
-  }
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #1b0d2d;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #1b0d2d; /* width of the border, type, color */
+}
+.secondary-button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  padding: 10px;
+}
+a:hover {
+  opacity: .4;
+}
