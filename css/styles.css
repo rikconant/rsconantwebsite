@@ -1,82 +1,213 @@
-body{
-    background-color: #ffffff;
-    font-family: 'Inter', regular;
-    font-size: 28px; /* Sets the font size to 28px */
-    font-weight: 600; /* Sets the font weight to 600 */
-    line-height: 1.1
-    ; /* Sets the line-height to 1.1 * the font-size */
-    color: #1b0d2d;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4;
-  }
-  h1 {
-    font-family: 'MuseoModerno', semi-bold;
-    font-size: 44px; 
-    font-weight: 600;
-  }
-  
-  h2 {
-    font-family: 'MuseoModerno', semi-bold;
-    font-size: 28px; 
-    font-weight: 600;
-  }
-  
-  h3 {
-    font-size: 36px;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 20px;
-    font-weight: 400;
-  }
-  h5 {
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: underline;
-  }
-  h6 {
-    font-family: 'MuseoModerno', medium;
-    font-size: 44px; 
-    font-weight: 400;
-  }
+.container {
+  padding: 0 15px;
+}
+body {
+  background-color: red;
+  font-family: 'Inter', regular;
+  font-size: 28px;
+  /* Sets the font size to 28px */
+  font-weight: 600;
+  /* Sets the font weight to 600 */
+  line-height: 1.1;
+  /* Sets the line-height to 1.1 * the font-size */
+  color: #1b0d2d;
+}
+.logo {
+  max-width: 250px;
+}
+
+#hero {
+  display: inline-block;
+  background-color: #f3fff4;
+  height: 9.7%;
+  width: 355px;
+  margin: 10px auto 0;
+}
+#skills {
+  display: inline-block;
+  background-color: #f6f3ff;
+  height: 10.2%;
+  width: 355px;
+  margin: 10px auto 0;
+}
+#resume {
+  display: inline-block;
+  background-color: #f6f3ff;
+  height: 10.2%;
+  width: 355px;
+  margin: 10px auto 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-family: 'MuseoModerno', semi-bold;
+  font-size: 44px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'MuseoModerno', semi-bold;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+h6 {
+  font-family: 'MuseoModerno', medium;
+  font-size: 44px;
+  font-weight: 400;
+}
+
 p {
-    font-size: 19px; /* Sets the font size to 19px */
-    font-weight: 400; /* Sets the font weight to 400 */
-    line-height: 1.1
-    ; /* Sets the line-height to 1.1 * the font-size */
+  font-size: 19px;
+  /* Sets the font size to 19px */
+  font-weight: 400;
+  /* Sets the font weight to 400 */
+  line-height: 1.1;
+  /* Sets the line-height to 1.1 * the font-size */
 }
-#menu1 > li{
-    font-size: 16px; /* Sets the font size to 19px */
-    font-weight: 400; /* Sets the font weight to 400 */
-    line-height: 1.1
-    ; /* Sets the line-height to 1.1 * the font-size */  
+.social
+{
+  text-align: center;
 }
-#menu2 > li{
-  font-size: 20px; /* Sets the font size to 19px */
-  font-weight: 400; /* Sets the font weight to 400 */
-  line-height: 1.1
-  ; /* Sets the line-height to 1.1 * the font-size */  
+
+.social a {
+  display: inline-block;
+  margin: 15;
 }
+#menu1>li {
+  text-align: center;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to 400 */
+  line-height: 1.1;
+  /* Sets the line-height to 1.1 * the font-size */
+}
+
+#menu2>li {
+  font-size: 20px;
+  /* Sets the font size to 20px */
+  font-weight: 400;
+  /* Sets the font weight to 400 */
+  line-height: 1.1;
+  /* Sets the line-height to 1.1 * the font-size */
+}
+
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #1b0d2d;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 500;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #1b0d2d; /* width of the border, type, color */
+  border-bottom: 2px solid #1b0d2d;
+  /* width of the border, type, color */
 }
+
 .secondary-button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   padding: 10px;
 }
+
 a:hover {
   opacity: .4;
+}
+
+header {
+  display: inline-block;
+  background-color: #1b0d2d;
+  height: 24%;
+  margin: 10px 10px 0 px;
+  text-align: center;
+  padding: 60px 30px 10px;
+}
+#yellowbox {
+  display: inline-block;
+  background-color: #fbf100;
+  height: 36%;
+  width: 100%;
+  margin: 0px 0 auto 10px;
+}
+#menu1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#selfport4 {
+  width: 10%;
+  margin: none;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  font-weight: 400;
+}
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+footer {
+  display: inline-block;
+  background-color: #1b0d2d;
+  height: 14.3%;
+  margin: 10px;
+}
+.findme {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  padding: 10px;
+  font-family: 'MuseoModerno', semi-bold;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #ffffff
+}
+.socialtext {
+  display: inline-block;
+  padding: 10px;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #ffffff
 }
