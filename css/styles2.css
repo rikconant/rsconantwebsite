@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+  }
+  h6 {
+    line-height: 1.4;
+  }
+  
+  h1 {
+    font-family: 'MuseoModerno';
+    font-size: 30px;
+    text-align: center;
+    display:block;
+    font-weight: 600;
+  }
+  .regular-h1 {
+    display: block;
+    font-size: 26px;
+    font-weight: 200;
+}
+  h2 {
+    font-family: 'MuseoModerno', semi-bold;
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-family: 'MuseoModerno';
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    font-weight: 300;
+  }
+  
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  h5 {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  
+  h6 {
+    font-family: 'MuseoModerno', medium;
+    font-size: 44px;
+    font-weight: 400;
+    }
+ 
+      p {
+        font-size: 12px;
+        /* Sets the font size to 19px */
+        font-weight: 400;
+        /* Sets the font weight to 400 */
+        line-height: 1.1;
+        /* Sets the line-height to 1.1 * the font-size */
+        max-width: 320;
+      }
+      
+      #menu1>li {
+        display: inline-block;
+        text-align: center;
+        font-size: 14px;
+        /* Sets the font size to 16px */
+        font-weight: 400;
+        /* Sets the font weight to 400 */
+        line-height: 1.1;
+        /* Sets the line-height to 1.1 * the font-size */
+      }
+      
+      #menu2>li {
+        font-size: 16px;
+        /* Sets the font size to 20px */
+        font-weight: 400;
+        /* Sets the font weight to 400 */
+        line-height: 1.1;
+        /* Sets the line-height to 1.1 * the font-size */
+      } 
+      #hero2-h1{
+        font-size: 20px;
+        position: relative;
+        right: 30px;
+        bottom: 44px;
+      }
+      #hero2-h2{
+        font-size: 20px;
+        position: relative;
+        left: 36px;
+        bottom: 70px;
+        font-weight: 100;
+      }
+      nav > ul > li > a {
+        padding: 0 15px 0;
+        font-weight: 400;
+        display: inline-block;
+      }
+      .findme {
+        display: inline;
+        font-size: 26px;
+        line-height: 1.3;
+        margin-bottom: 35px;
+        color: #ffffff
+        
+      }
+      .socialtext {
+        font-size: 15px;
+        margin: auto;
+        font-weight: 300;
+        line-height: 1.3;
+        color: #ffffff
+      }
+      h4 {
+        font-family: 'Inter', regular;
+        font-size: 26px;
+        /* Sets the font size to 26px */
+        font-weight: 400;
+        /* Sets the font weight to 400 */
+        line-height: 1.1;
+        /* Sets the line-height to 1.1 * the font-size */
+        color: #1b0d2d;
+        text-decoration: none;
+      }
+      h5 {
+        font-family: 'Inter', regular;
+        font-size: 24px;
+        /* Sets the font size to 24px */
+        font-weight: 400;
+        /* Sets the font weight to 400 */
+        line-height: 1.1;
+        /* Sets the line-height to 1.1 * the font-size */
+        color: #1b0d2d;
+        text-decoration: none;
+      }
+      .bold-text{
+        font-weight: 800;
+        line-height: 1;
+      }

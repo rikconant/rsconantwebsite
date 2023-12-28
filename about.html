@@ -8,79 +8,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=MuseoModerno" rel="stylesheet">
     <title>rscsite work</title>
 </head>
 
 <body><!-- site about page-->
     <header>
-        <div class="container" display="inline-block"> 
+        <div class="container">
             <img src="img/rsc/rsconant-logo-1200.png" alt="RSClogo">
         </div>
-        <div class="container" display="inline-block" id="yellowbox">
+        <div class="container" id="yellowbox">
             <nav>
                 <ul id="menu1">
-                <li><a href='index.html'>Work</a></li>
-                <li><a href='about.html'>About</a></li>
-                <li><a href='#contact'>Contact</a></li>
+                    <li><a href='index.html'>Work</a></li>
+                    <li><a href='about.html'>About</a></li>
+                    <li><a href='#contact'>Contact</a></li>
                 </ul>
             </nav>
-        </div>         
+        </div>
     </header>
     <main>
         <section>
             <div class="container"><!-- 3 rows-->
                 <div><!-- top row-->
-                    <div id="hero"><!-- top row, column 1-->
+                    <div id="hero2"><!-- top row, column 1-->
                         <picture id="selfport4">
-                            <source srcset="img/rsc/self-port-4.jpg"  media="(max-width:767px)">
+                            <source srcset="img/rsc/self-port-4.jpg" media="(max-width:767px)">
                             <img src="img/rsc/self-port-4.jpg" alt="My Image">
                         </picture>
-                        <h1>Rik Conant</h1>
-                        <h2>UI/UX Designer</h2>
+                        <h1 id="hero2-h1">Rik Conant</h1>
+                        <h2 id="hero2-h2">UX Designer</h2>
                     </div>
-                    <div><!-- top row, column 2-->
+                    <div class="text-box"><!-- top row, column 2-->
                         <h2>Who I Am</h2>
-                        <p>
-                            I eat, breathe, and sleep design, art, and psychology. I'd rather
-                            spend time creating, honing my design skills, and learning what
-                            makes people tick, than most anything else I can think of.</p>
-
-                        <p>The knowledge and skill needed for good UI/UX design are what
-                            I spend my energy on every day, just for fun. In a way, I am a
-                            novice UI/UX designer, but in a way my passions have been
-                            molding me for this career my entire life.</p>
+                        <div class="hero-container2">
+                            <p>
+                                I eat, breathe, and sleep design, art, and psychology. I'd rather
+                                spend time creating, honing my design skills, and learning what
+                                makes people tick, than most anything else I can think of.</p>
+                            <p>
+                                The knowledge and skill needed for good UI/UX design are what
+                                I spend my energy on every day, just for fun. In a way, I am a
+                                novice UI/UX designer, but in a way my passions have been
+                                molding me for this career my entire life.</p>
+                        </div>
                     </div>
                 </div><!-- END top row-->
                 <div><!-- middle row-->
-                    <div><!-- middle row, column 1-->
+                    <div class="text-box"><!-- top row, column 2-->
                         <h2>My Experience</h2>
-                        <p>After majoring in Fine Arts and Commercial Art in college, I began a
-                            long career with a concrete sculpture company, doing casting and
-                            finishing work. Although I eventually transitioned from the hands-on
-                            work into a leadership position, I came to fill an advisory role on the
-                            product design team and marketing. </p>
-
-                        <p>More recently I have expanded my artistic range by studying UI/UX. After
-                            one year of coursework I am eager and ready to use my creative passion
-                            and design skills to help foster the easiest and clearest user
-                            experiences for your customers.</p>
-                    </div>
-                    <div><!-- middle row, column 2, contains two sub rows-->
-                        <div id="skills"><!-- sub row of column 2, skills container-->
-                            <h2>Skills</h2>
-                            <ul id="menu2">
-                                <li>UI Design</li>
-                                <li>Front-End Development</li>
-                                <li>UI Design</li>
-                            </ul>
+                        <div class="hero-container2">
+                            <p>
+                                After majoring in Fine Arts and Commercial Art in college, I began a
+                                long career with a concrete sculpture company, doing casting and
+                                finishing work. Although I eventually transitioned from the hands-on
+                                work into a leadership position, I came to fill an advisory role on the
+                                product design team and marketing. </p>
+                            <p>
+                                More recently I have expanded my artistic range by studying UI/UX. After
+                                one year of coursework I am eager and ready to use my creative passion
+                                and design skills to help foster the easiest and clearest user
+                                experiences for your customers.</p>
                         </div>
-                        <div><!-- sub row 2 of column 2, tools container-->
-                            <h2>Tools</h2>
-                            <img src="img/rsc/logo-figma.svg" width="58" height="58" alt="Figma">
-                            <h4>Figma</h4>
-                            <img src="img/rsc/logo-adobe-xd.svg" width="58" height="58" alt="Adobe Xd">
-                            <h4>Adobe XD</h4>
+                    </div>
+                    <div id="skills"><!-- sub row of column 2, skills container-->
+                        <h2>Skills</h2>
+                        <ul id="menu2">
+                            <li>UI Design</li>
+                            <li>Front-End Development</li>
+                            <li>UI Design</li>
+                        </ul>
+                    </div>
+                    <div class="toolbox"><!-- sub row 2 of column 2, tools container-->
+                        <h2>Tools</h2>
+                        <div id="tools">
+                            <div id="figma-logo"><!-- figma logo column-->
+                                <img class="tool-img" src="img/rsc/logo-figma.svg" width="58" height="58" alt="Figma">
+                                <h5>Figma</h5>
+                            </div>
+                            <div id="xd-logo"><!-- adobe xd logo column-->
+                                <img class="tool-img" src="img/rsc/logo-adobe-xd.svg" width="58" height="58"
+                                    alt="Adobe Xd">
+                                <h5>Adobe XD</h5>
+                            </div>
                         </div>
                     </div>
                 </div><!-- END middle row and About me content-->
@@ -91,20 +101,20 @@
             </div><!-- END 3 rows-->
         </section>
     </main>
-    <footer id="contact"><!-- entire footer section block-->
+    <footer><!-- entire footer section block-->
         <div class="container"><!-- container for 3 footer rows-->
             <div><!-- social row-->
                 <div><!-- contact text-->
                     <h4 class="socialtext">Interested in my services?</h4>
-                    <h4 class="socialtext">Here's how to</h4>
+                    <h4 class="socialtext2">Here's how to</h4>
                     <h1 class="findme">Find Me</h1>
                 </div><!-- END  contact text-->
-                <div class="social"><!-- contact links-->
-                    <a href = "mailto:rscuiux@gmail.com">
-                        <img src="img/rsc/icon-email.svg" width="58" height="58" alt="My Email">
+                <div class="social-links"><!-- contact links-->
+                    <a href="mailto:rscuiux@gmail.com">
+                        <img src="img/rsc/icon-email.svg" width="34" height="34" alt="My Email">
                     </a>
                     <a href="https://www.linkedin.com/in/rik-conant-15859bb3/" target="_blank">
-                        <svg width="56" height="56" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="32" height="32" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="3.84095" y="3.2124" width="29.4694" height="28.9084" fill="#FFFCFC" />
                             <path
                                 d="M29.4761 29.5573H24.3503V21.5078C24.3503 19.5884 24.3161 17.1174 21.6844 17.1174C19.0147 17.1174 18.6062 19.2088 18.6062 21.3681V29.5567H13.4804V13.0038H18.4012V15.266H18.47C18.9625 14.4216 19.6741 13.7271 20.5291 13.2562C21.3841 12.7853 22.3504 12.5558 23.3252 12.5921C28.5204 12.5921 29.4783 16.0188 29.4783 20.4766L29.4761 29.5573ZM7.69674 10.7412C7.10842 10.7413 6.53329 10.5664 6.04406 10.2388C5.55484 9.91112 5.1735 9.44533 4.94826 8.90034C4.72302 8.35535 4.66401 7.75562 4.77868 7.17699C4.89335 6.59836 5.17656 6.06683 5.59248 5.6496C6.00841 5.23238 6.53838 4.9482 7.11537 4.833C7.69236 4.71781 8.29046 4.77677 8.83403 5.00243C9.37761 5.22809 9.84224 5.61032 10.1692 6.10078C10.4961 6.59124 10.6707 7.1679 10.6708 7.75784C10.6709 8.14955 10.594 8.53744 10.4446 8.89935C10.2951 9.26127 10.0761 9.59013 9.79993 9.86716C9.52376 10.1442 9.19589 10.364 8.83502 10.5139C8.47416 10.6639 8.08737 10.7411 7.69674 10.7412ZM10.2596 29.5573H5.12849V13.0038H10.2596V29.5573ZM32.0316 0.00236254H2.55277C1.88368 -0.00520895 1.23897 0.253897 0.760298 0.722745C0.281629 1.19159 0.00816582 1.83182 0 2.50275V32.1856C0.00788634 32.8569 0.281174 33.4975 0.759827 33.9669C1.23848 34.4362 1.88335 34.6958 2.55277 34.6887H32.0316C32.7023 34.6971 33.349 34.4382 33.8295 33.9689C34.3101 33.4996 34.5852 32.8582 34.5945 32.1856V2.50061C34.5849 1.82835 34.3096 1.18739 33.8291 0.718557C33.3485 0.249721 32.702 -0.00864538 32.0316 0.000220884"
@@ -112,12 +122,12 @@
                         </svg>
                     </a>
                     <a href="https://www.behance.net/richardconant"><!--behance icon and link-->
-                        <img src="img/rsc/icon-behance.svg" width="58" height="58" alt="Behance">
+                        <img src="img/rsc/icon-behance.svg" width="34" height="34" alt="Behance">
                     </a>
                 </div><!-- END  contact links-->
             </div><!-- END social row-->
             <div><!-- copyright row-->
-                <p>Copyright Richard Conant 2023</p>
+                <p class="copyright">© Copyright Richard Conant 2023</p>
             </div><!-- END copyright row-->
         </div><!-- END container for 3 footer rows-->
     </footer>
