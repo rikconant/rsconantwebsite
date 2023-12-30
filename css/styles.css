@@ -41,6 +41,14 @@ body {
   position: relative;
   bottom: 12px;
 }
+#footer-container {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  top: 44px;
+  margin-top: 0;
+}
+
 #figma-logo{
   max-width: 90px;
   display: inline-block;
@@ -117,12 +125,13 @@ body {
 #resume {
   display: inline-block;
   background-color: #f6f3ff;
-  height: 866;
+  height: auto;
   width: 100%;
   margin: 10px auto 0;
   position: relative;
   text-align: center;
   top: 90px;
+  padding-bottom: 76px;
 }
 
 h1,
@@ -224,6 +233,8 @@ p {
   /* Sets the font weight to 400 */
   line-height: 1.4;
   /* Sets the line-height to 1.1 * the font-size */
+  position: relative;
+  bottom: 12px;
 }
 
 img {
