@@ -1,139 +1,600 @@
+/*
+Colors used:
+Background color (Background White): #f5f5f5;
+Main color (Purple): #542b46;
+Header text 1 (Dark Teal): #03545b;
+Header text 2 (Dark Blue): #0f2c3f;
+Body text (Graphite): #282e2e;
+Accent color (Seafoam): #cce8dc;
+Complimentary accent color (Gold): #e0c481
+*/
 * {
-    box-sizing: border-box;
-  }
-  h6 {
-    line-height: 1.4;
-  }
-  
-  h1 {
-    font-family: 'MuseoModerno';
-    font-size: 30px;
-    text-align: center;
-    display:block;
-    font-weight: 600;
-  }
-  .regular-h1 {
-    display: block;
-    font-size: 26px;
-    font-weight: 200;
+  box-sizing: border-box;
 }
-  h2 {
-    font-family: 'MuseoModerno', semi-bold;
-    font-size: 26px;
-    text-align: center;
+
+/* Layout styling */
+
+html { 
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: .02em;
+  color: #282e2e;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: normal;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #03545b;
+  font-family: 'Rushk', 'Mogra', serif;
+  color: #542b46;
+} /* Main page title or text */
+h2 {
+  font-size: 2.0em;
+  font-weight: 500;
+  color: #03545b;
+} /* Main subheadings */
+h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #03545b;
+} /* Subsections of subheadings; mostly used on project pages */
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #03545b;
+  line-height: 2;
+} /* Project page directory headings */
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: #0f2c3f
+} /* Page section title, corresponds to the nav directory options (Projects, About Me) */
+
+h3.sub2-header {
+  font-size: 1.25em;
+}
+
+.sort {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-variant: small-caps;
+  background-color: #cce8dc;
+  color: #282e2e;
+  padding: 10px 20px;
+  margin: 0px;
+  border-radius: 24px;
+}
+
+img {
+  width: 100%;
+}
+
+/*General link*/
+a {
+  color: #e0c481;
+  text-decoration: none;
+}
+a:visited {
+  color: #bb9a4c;
+}
+a:hover,
+a:focus {
+  color:#e0c481;
+  text-decoration: underline;
+}
+a:active {
+  color: #e0c481;
+  text-decoration: none;
+}
+/* Directory links for project page*/
+.section {
+  color: #03545b;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 0 1%;
+  display: inline-block;
+  line-height: 1.5;
+  transition: .7s;
+}
+.section:visited {
+  color: #542b46;
+}
+.section:hover,
+.section:focus {
+  color: #03545b;
+  padding: 0 12px;
+  display: inline-block;
+  text-decoration: underline;
+  background-color: #cce8dc;
+  border-radius: 3em;
+}
+.arrow {
+  color: #cce8dc;
+  transition: .7s;
+}
+.arrow:visited {
+  color: #cce8dc;
+}
+.arrow:hover,
+.arrow:focus {
+  color:#03545b;
+  text-decoration: underline;
+  padding: 0 1.5%;
+  background-color: #cce8dc;
+  border-radius: 3em;
+}
+.button {
+  display: inline-block;
+  background-color: #542b46;
+  color: #f5f5f5;
+  font-weight: 300;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  border-bottom: 2px solid #3c2033;
+  transition: .2s opacity;
+}
+.button:visited {
+  color:#f5f5f5;
+}
+.button:hover {
+  color:#f5f5f5;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.nav-button {
+  color: #f5f5f5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5px 10px;
+  text-align: center;
+}
+.nav-button:hover,
+.nav-button:focus {
+  text-decoration: underline;
+  animation: 2s pulse calc(1) ease-in-out, 2s glow infinite 2s;
+}
+@keyframes pulse {
+  0% {
+      transform: scale(.95);
+      text-shadow: 0 0 10px rgba(255, 212, 39, 0.0);
   }
-  
-  h3 {
-    font-family: 'MuseoModerno';
-    font-size: 18px;
-    margin: auto;
-    text-align: center;
-    display: inline-block;
-    font-weight: 300;
+  25% {
+      transform: scale(1);
+      text-shadow: 0 0 10px rgba(255, 212, 39, 0.7);
   }
-  
-  h4 {
-    font-size: 20px;
-    font-weight: 400;
+  50% {
+      transform: scale(1.05);
+      text-shadow: 0 0 10px rgba(255, 212, 39, 0.9);
   }
-  
-  h5 {
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: underline;
+  75% {
+      transform: scale(1);
+      text-shadow: 0 0 10px rgba(255, 212, 39, 0.7);
   }
-  
-  h6 {
-    font-family: 'MuseoModerno', medium;
-    font-size: 44px;
-    font-weight: 400;
+  100% {
+      transform: scale(.95);
+      text-shadow: 0 0 10px rgba(255, 212, 39, 0.5);
+  }
+}
+@keyframes glow {
+  0% {
+      transform: scale(.95);
+      text-shadow: 0 0 10px rgba(255, 212, 39, 0.5);
+  }
+  50% {
+      transform: scale(1);
+      text-shadow: 0 0 10px rgba(255, 212, 39, 0.7);
+  }
+  100% {
+      transform: scale(.95);
+      text-shadow: 0 0 10px rgba(255, 212, 39, 0.5);
+  }
+}
+
+.nav-button:visited {
+  color: #f5f5f5;
+}
+
+header {
+  background-color: #542b46;
+  border-bottom: 3px solid #3c2033;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100%;
+  padding: 10px 0 4px;
+  z-index: 9999;
+}
+.headcolor.responsive {
+  background-color: #03545b;
+}
+.logo {
+  max-width: 38.82px;
+  padding-top: 2.5px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 3px;
+  font-size: 20px;
+  padding: 3px 0;
+  transition: .7s;
+}
+.navtoggle li .icon:hover {
+  border-radius: 8px;
+  padding: 3px 7px;
+  background-color: #3c2033;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  text-align: end;
+  transition: .5s ease-in-out;
+}
+.navtoggle.responsive li:hover {
+  border-radius: 3em;
+  padding: 10px 24px;
+  background-color: #3c2033;
+  border-bottom: 1px solid rgba(255, 212, 39, 0.5);
+  box-shadow: inset 0 -1px 10px -5px rgba(255, 212, 39, 0.3);
+}
+.navtoggle.responsive li:last-child {
+  padding: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+.navtoggle.responsive nav {
+  text-align: end;
+  width: auto;
+  margin-bottom: 8px;
+  margin-top: 42px;
+  /*border-radius: 8px;
+  background-color: #3c2033;*/
+  float: right;
+}
+.navtoggle.responsive li .icon {
+  border-radius: 8px;
+  background-color: #3c2033;
+  padding: 3px 7px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.75);
+  transition: .7s;
+}
+
+footer {
+  background-color: #542b46;
+  padding: 20px 40px;
+  border-bottom: 3px solid #3c2033;
+  color: #f5f5f5;
+  text-align: center;
+}
+footer h2{
+  color:#e0c481;
+}
+#contacticons {
+  text-align: center;
+}
+
+main {
+  padding-top: 60px;
+}
+#hero {
+  background-color: #ffffff;
+  color:#0f2c3f;
+  margin: 0;
+  padding: .67em 0;
+  display:inline-block;
+  width:100%;
+}
+.row {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.row#prototype {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#profile img {
+  max-width: 100%;
+  border-radius: 100%;
+  float:none;
+}
+#profilepic {
+  width: 100%;
+}
+
+iframe {
+  display: flex;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  text-align: center;
+  border: #f5f5f5;
+  flex-basis: content;
+}
+
+.work-image {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-section {
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+  visibility: hidden;
+}
+.project-section img {
+  width: 100%;
+}
+
+
+.Pickleball {
+  animation: 1.5s bounce cubic-bezier(0.5, 0.05, 1, .9) infinite alternate;
+}
+/*.Pickleball {
+  animation: 2s spin infinite;
+  transform-origin: center center;
+  display: inline-block;
+} I want to make the pickleball spin in place, but it keeps rotating around the center of the image instead*/
+@keyframes bounce {
+  from {transform: translate(0, 0);}
+  to   {transform: translate(0, 300px);}
+}
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+/* Medium devices (640px) */
+@media only screen and (min-width: 640px) {
+  header {
+      text-align: unset;
+      padding: 10px 0;
+  }
+  main {
+      padding-top: 80px;
+  }    
+  nav {
+      width: auto;
+      float: right;
+  }
+  nav > ul {
+      margin: 1em 0;
+      display: inline-block;
+  }
+  nav > ul > li {
+      display: inline-block
+  }
+  body {
+      font-size: 18px;
+  }
+  h1 {
+      font-size: 3em;
+  }
+  #hero {
+      text-align: center;
+  }
+  #hero span {
+      display: block;
+  }
+  [class*="col-"] {
+      column-gap: 50px;
+  }    
+  .col-md-6 {
+      width: 50%;
+      align-self: flex-start;
+  }
+  .col-md-8 {
+      width: 60%;
+      padding: 10px 20px 10px 10px;
+  }
+  #prototype .col-md-8 {
+      padding: 10px 0 10px 20px;
+  }
+  .col-md-4 {
+      width: 40%;
+      padding: 20px;
+  }
+  .col-md-3 {
+      width: 25%;
+      padding: 20px;
+      row-gap: 20px;
+  }
+  .col-md-9 {
+      width: 75%;
+      padding: 20px;
+  }
+  #prototype .col-md-4 {
+      justify-content: space-around;
+      align-items: center;
+  }
+  .col-md-4 img {
+      max-width: 400px;
+      display: flex;
+      justify-content: space-around;
+      border-radius: 100%;
+      margin: auto;
+  }    
+  #profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+  #profile img {
+      max-width: 400px;
+      border-radius: 100%;
+      margin: auto;
+  }
+  .nav-button {
+      margin-inline-start: 20px;
+      margin-inline-end: 20px;
+  }
+  .navtoggle.responsive li {
+      all: unset;
+  }
+  .navtoggle li:not(:last-child) {
+      display: inline-block;
+  }
+  .navtoggle li:last-child {
+      display: none;
     }
- 
-      p {
-        font-size: 12px;
-        /* Sets the font size to 19px */
-        font-weight: 400;
-        /* Sets the font weight to 400 */
-        line-height: 1.1;
-        /* Sets the line-height to 1.1 * the font-size */
-        max-width: 320;
-      }
-      
-      #menu1>li {
-        display: inline-block;
-        text-align: center;
-        font-size: 14px;
-        /* Sets the font size to 16px */
-        font-weight: 400;
-        /* Sets the font weight to 400 */
-        line-height: 1.1;
-        /* Sets the line-height to 1.1 * the font-size */
-      }
-      
-      #menu2>li {
-        font-size: 16px;
-        /* Sets the font size to 20px */
-        font-weight: 400;
-        /* Sets the font weight to 400 */
-        line-height: 1.1;
-        /* Sets the line-height to 1.1 * the font-size */
-      } 
-      #hero2-h1{
-        font-size: 20px;
-        position: relative;
-        right: 30px;
-        bottom: 44px;
-      }
-      #hero2-h2{
-        font-size: 20px;
-        position: relative;
-        left: 36px;
-        bottom: 70px;
-        font-weight: 100;
-      }
-      nav > ul > li > a {
-        padding: 0 15px 0;
-        font-weight: 400;
-        display: inline-block;
-      }
-      .findme {
-        display: inline;
-        font-size: 26px;
-        line-height: 1.3;
-        margin-bottom: 35px;
-        color: #ffffff
-        
-      }
-      .socialtext {
-        font-size: 15px;
-        margin: auto;
-        font-weight: 300;
-        line-height: 1.3;
-        color: #ffffff
-      }
-      h4 {
-        font-family: 'Inter', regular;
-        font-size: 26px;
-        /* Sets the font size to 26px */
-        font-weight: 400;
-        /* Sets the font weight to 400 */
-        line-height: 1.1;
-        /* Sets the line-height to 1.1 * the font-size */
-        color: #1b0d2d;
-        text-decoration: none;
-      }
-      h5 {
-        font-family: 'Inter', regular;
-        font-size: 24px;
-        /* Sets the font size to 24px */
-        font-weight: 400;
-        /* Sets the font weight to 400 */
-        line-height: 1.1;
-        /* Sets the line-height to 1.1 * the font-size */
-        color: #1b0d2d;
-        text-decoration: none;
-      }
-      .bold-text{
-        font-weight: 800;
-        line-height: 1;
-      }
+  .logo {
+      max-width: 48px;
+      padding-top: 9px;
+  }      
+  .section {
+      padding: 0 1%;
+  }
+  .section:hover,
+  .section:focus {
+      padding: 0 20px;
+  }       
+  .navtoggle.responsive nav{
+      all: unset;
+      width: auto;
+      float: right;
+  }
+  .navtoggle.responsive li:hover {
+      all: unset;
+  }
+  .container {
+      padding: 0 60px;
+  }
+  div.right-column {
+      padding-right: 20px;
+  }
+  div.left-column {
+      padding-left: 20px
+  }
+}
+
+/* Large devices (1024px) */
+@media only screen and (min-width: 1024px) {
+  main {
+      padding-top: 100px;
+  }
+  .col-lg-8 {
+      width: 50%;
+  }
+  .col-lg-7 {
+      width: 60%;
+  }
+  .col-lg-5 {
+      width: 40%;
+  }
+  .col-lg-5 img {
+      display: flex;
+      justify-content: space-around;
+      margin-right: 0px;
+  }
+  .col-lg-4 {
+      width: 25%;
+  }
+  .col-lg-9 {
+      width: 75%;
+  }
+  #profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+  .navtoggle {
+      width: 100%;
+  }
+  body {
+      font-size: 22px;
+  }
+  .logo {
+      max-width: 64px;
+      padding-top: 8px;
+  }
+  .section:hover,
+  .section:focus {
+      padding: 0 30px;
+  }
+  .container {
+      padding: 0 100px;
+  }    
+}
+/* Xlarge devices (1440px) */
+@media only screen and (min-width: 1440px) {
+  .col-xl-4 {
+      width: 50%;
+      float: left;
+  }
+  .col-xl-2 {
+      width: 25%;
+      row-gap: 50px;
+  }
+  .col-xl-6 {
+      width: 75%;
+  }
+  .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+  }  
+}
