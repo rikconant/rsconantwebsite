@@ -227,6 +227,13 @@ img {
   padding: 5px 0 2px;
   line-height: 1;
   margin-top: 8px;
+  border-radius: 3px;
+  border-bottom: 2px solid #1b0d2d;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.6;
 }
 #tools {
   padding: 0;
@@ -236,6 +243,7 @@ img {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   padding: 10px;
+  transition: .2s opacity;
 }
 
 a:hover {
@@ -399,34 +407,17 @@ Medium devices (640px and larger)
       top: 0;
       right: 0;
       padding: 68;
+      margin-bottom: 30px;
     }
     #menu1>li {
       font-size: 15px;
       padding: 0;
     }
-    .col-md-6 {
-      margin-left: 7%;
-      width: 50%;
-    }
-    [class*="col-"] {
-      float: left;
-    }
-    .column-md-6 {
-      width: 35%;
-      float: right;
-    }
-    .col2-md-6 {
-      margin-left: 7%;
-      width: 70%;
-    }
+    
     #hero2-h1{
       font-size: 28px;
     }
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
+   
     .mobile-container {
       max-width: 600px;
       padding: 0;
@@ -434,49 +425,36 @@ Medium devices (640px and larger)
     #hero2 {
       background-color: #f6f3ff;
       width: 304px;
+      height: 136px;
       text-align: center;
-      margin: 0 auto 0;
       float: left;
-      overflow: hidden;
+      margin: 0 0 0 24px;
     }
     #hero2-h2{
       font-size: 20px;
-      position: relative;
-      left: 44px;
-      bottom: 109px;
       font-weight: 100;
     }
     .text-box {
-      max-width: 230px;
-      position: relative;
-      top:38px;
-      right: 34px;
-      width: 50%;
-      float: right;
+      max-width: 400px;
+      margin-top: 74px;
+      margin-right: 24px;
     }
     .text-box2 {
-      max-width: 230px;
-      position: relative;
-      top: 70px;
-      left: 42px;
-      width: 50%;
+      max-width: 400px;
       float: left;
     }
     #selfport4 {
       display: inline-block;
       max-width: 106px;
-      position: relative;
-      top: 6px;
-      right: 80px;
-      margin: 10px;
+      margin: 14px;
      }
     #skills {
       background-color: #f6f3ff;
-      position: relative;
-      top: 74px;
+      float: left;
     } 
     h2 {
       font-family: 'MuseoModerno', semi-bold;
+      margin-top: 38px;
       font-size: 26px;
       text-align: center;
     } 
@@ -498,8 +476,12 @@ Medium devices (640px and larger)
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
   }
-
-
+  .hero-container2 {
+    padding-left: 18px;
+    padding-bottom: 0;
+    padding-right: 16px;
+    max-width: 290px;
+  }
 
 /* ==============================
 Large devices (1024px or larger)
