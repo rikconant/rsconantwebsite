@@ -452,6 +452,11 @@ Medium devices (640px and larger)
       background-color: #f6f3ff;
       float: left;
     } 
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
     h2 {
       font-family: 'MuseoModerno', semi-bold;
       margin-top: 38px;
