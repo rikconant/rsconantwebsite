@@ -17,6 +17,10 @@ body {
 .container {
   max-width: 1200px;
 }
+.container2 {
+  max-width: 290;
+  margin: 0 auto;
+}
 h1,
 h2,
 h3,
@@ -356,10 +360,7 @@ footer {
   font-size: 10px;
   color: #ffffff;
 }
-#about-column{
-  height: 400px;
-  background-color: #e61616;
-}
+
 #hero2 {
   background-color: #f6f3ff;
   width: 304px;
@@ -452,11 +453,7 @@ Medium devices (640px and larger)
       background-color: #f6f3ff;
       float: left;
     } 
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
+ 
     h2 {
       font-family: 'MuseoModerno', semi-bold;
       margin-top: 38px;
@@ -467,6 +464,10 @@ Medium devices (640px and larger)
       list-style-type: none;
       margin: 0;
       padding-top: 26px;
+    }
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
     }
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
@@ -481,19 +482,37 @@ Medium devices (640px and larger)
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
   }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hero-container2 {
     padding-left: 18px;
     padding-bottom: 0;
     padding-right: 16px;
     max-width: 290px;
   }
-
+  #residence {
+    position: relative;
+    bottom: 0px;
+  }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 }
-
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ==============================
 X-large devices (1440px or larger)
