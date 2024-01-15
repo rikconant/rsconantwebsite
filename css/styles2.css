@@ -321,7 +321,7 @@ main {
   width:100%;
 }
 .row {
-  margin: 25px 0;
+  margin: 25px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

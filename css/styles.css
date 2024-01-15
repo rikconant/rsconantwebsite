@@ -14,13 +14,8 @@ body {
   /* Sets the line-height to 1.1 * the font-size */
   color: #1b0d2d;
 }
-.container {
-  max-width: 1200px;
-}
-.container2 {
-  max-width: 290;
-  margin: 0 auto;
-}
+
+
 h1,
 h2,
 h3,
@@ -85,6 +80,7 @@ h6 {
   padding-bottom: 0;
   padding-right: 16px;
   max-width: 1200px;
+  margin: 0 auto;
 }
 .hero-container3 {
   padding-top: 0;
@@ -107,7 +103,6 @@ h6 {
 
 #footer-container {
   width: 100%;
-  max-width: 1200px;
   margin-top: 0;
 }
 
@@ -128,7 +123,7 @@ h6 {
 .mobile-container {
   margin-top: 15px;
   padding: 6px 20px 35px 20px;
-  max-width: 600px;
+  max-width: 290px;
 }
 
 .row {
@@ -253,7 +248,10 @@ img {
 a:hover {
   opacity: .4;
 }
-
+#mywork-h1-2 {
+  margin-top: 40px;
+  margin-bottom: 20px;  
+  }
 header {
   display: inline-block;
   background-color: #1b0d2d;
@@ -381,6 +379,10 @@ footer {
 .col-sm-11 {width: 91.66%;}
 .col-sm-12 {width: 100%;}
 
+.text-col {
+  max-width: 340;
+  margin: 0 auto;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -410,6 +412,11 @@ Medium devices (640px and larger)
       padding: 68;
       margin-bottom: 30px;
     }
+    #mywork-h1-2 {
+    margin-top: 90px;
+    margin-bottom: 34px; 
+    font-size: 38px; 
+    }
     #menu1>li {
       font-size: 15px;
       padding: 0;
@@ -425,11 +432,11 @@ Medium devices (640px and larger)
     }
     #hero2 {
       background-color: #f6f3ff;
-      width: 304px;
-      height: 136px;
+      width: 303px;
+      height: 135px;
       text-align: center;
       float: left;
-      margin: 0 0 0 24px;
+      margin: 18px 0 0 4px;
     }
     #hero2-h2{
       font-size: 20px;
@@ -452,11 +459,12 @@ Medium devices (640px and larger)
     #skills {
       background-color: #f6f3ff;
       float: left;
+      width: 75%;
+      margin-left: 46px;
     } 
  
     h2 {
       font-family: 'MuseoModerno', semi-bold;
-      margin-top: 38px;
       font-size: 26px;
       text-align: center;
     } 
@@ -487,21 +495,30 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  .col-end::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
+
   .hero-container2 {
-    padding-left: 18px;
-    padding-bottom: 0;
-    padding-right: 16px;
     max-width: 290px;
+    margin: 0 auto;
   }
+
   #residence {
     position: relative;
     bottom: 0px;
+  }  
+  .text-col {
+    max-width: 86%;
+    margin: 0 auto;
+  }
+  .toolbox {
+    text-align: center;
+    height: auto;
+    margin-left: 17px;
   }
 /* ==============================
 Large devices (1024px or larger)
@@ -519,7 +536,11 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
-
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ==============================
 Extra-large devices (1920px or larger)
