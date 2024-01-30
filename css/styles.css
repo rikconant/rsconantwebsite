@@ -251,9 +251,8 @@ header {
   text-align: left;
 }
 #yellowbox {
-  width: 25%;
+  width: 100%;
   background-color: #fbf100;
-  float: right;
 }
 
 
@@ -288,11 +287,9 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
 }
 nav > ul > li {
-  display: inline-block;
-  padding: auto; 
+  display: inline-block; 
 }
 nav > ul > li > a {
   font-weight: 400;
