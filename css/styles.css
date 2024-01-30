@@ -254,7 +254,9 @@ header {
   width: 100%;
   background-color: #fbf100;
 }
-
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 
 #selfport4 {
  display: block;
