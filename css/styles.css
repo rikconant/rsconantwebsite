@@ -78,11 +78,11 @@ h6 {
 
 #hero {
   display: block;
-  background-color: #f3fff4;
+  background-color: #f6f3ff;
   width: 100%;
   text-align: center;
   padding: 25px 10px 20px;
-  border-top: border 150px #f3fff4;
+  border-top: border 150px #f6f3ff;
 }
 
 #footer-container {
@@ -185,6 +185,7 @@ p {
   /* Sets the font weight to 400 */
   line-height: 1.4;
   /* Sets the line-height to 1.1 * the font-size */
+  color: #222222;
 }
 
 img {
@@ -211,7 +212,7 @@ img {
   line-height: 1;
   margin-top: 8px;
   border-radius: 3px;
-  border-bottom: 2px solid #1b0d2d;
+  border-bottom: 2px solid #b10d2d;
   transition: 0.2s opacity;
 }
 
