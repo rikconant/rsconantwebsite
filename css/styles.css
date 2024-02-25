@@ -191,10 +191,7 @@ p {
 img {
   width: 100%;
 }
-#residence {
-  position: relative;
-  bottom: 8px;
-}
+
 
 .button {
   display: inline-block;
