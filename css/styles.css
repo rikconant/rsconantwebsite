@@ -202,7 +202,7 @@ img {
   background-color: #1b0d2d;
   height: 28px;
   width: 88px;
-  color: #111fff;
+  color: #ffffff;
   /* needed to override the default link color */
   font-size: 16px;
   text-align: center;
@@ -212,7 +212,7 @@ img {
   line-height: 1;
   margin-top: 8px;
   border-radius: 3px;
-  border-bottom: 2px solid #b10d2d;
+  border-bottom: 2px solid #1b0d2d;
   transition: 0.2s opacity;
 }
 
