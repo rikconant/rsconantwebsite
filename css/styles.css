@@ -342,6 +342,7 @@ footer {
   display: inline-block;
   padding-top: 10px;
   margin: 2px;
+  width: 34px;
 }
 .copyright{
   font-weight: 50;
